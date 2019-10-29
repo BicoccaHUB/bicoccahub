@@ -1,8 +1,10 @@
+const path = require("path")
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `BicoccaHUB`,
+    description: `La più grande collezione di appunti del corso di informatica degli studenti della Bicocca`,
+    author: `@kowalski7cc, @amarusofia, @dlcgold, @daverhapsody`,
+    siteUrl: "https://example.com/",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,7 +12,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, "src", "images"),
       },
     },
     `gatsby-transformer-sharp`,
@@ -24,9 +26,31 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/",
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-nprogress",
+      options: {
+        color: "green",
+        showSpinner: false,
+      },
+    },
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-react-svg",
+    "gatsby-plugin-catch-links",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

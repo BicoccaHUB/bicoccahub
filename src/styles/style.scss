@@ -1,0 +1,54 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+header {
+  .gatsby-image-wrapper {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    @include media-breakpoint-down(sm) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+  
+  .container {
+    max-width: 600px;
+  }
+
+  .title-container {
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    span {
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+}
+
+#welcome {
+  margin-top: 3rem;
+  h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    text-shadow: 1px 3px 3px rgba($color: #000, $alpha: 0.5)
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fai {
+  font-size: 3rem;
+  max-height: 3rem;
+  margin-bottom: .5rem;
+}

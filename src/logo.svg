@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="6rem" height="6rem" viewBox="0 0 4 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+   <g id="cerchi">
+      <path id="verde" d="M3.388,0.019c0.142,0 0.257,0.116 0.257,0.258c0,0.142 -0.115,0.258 -0.257,0.258c-0.143,0 -0.258,-0.116 -0.258,-0.258c0,-0.142 0.115,-0.258 0.258,-0.258Zm0,0.147c0.061,0 0.111,0.05 0.111,0.111c0,0.061 -0.05,0.111 -0.111,0.111c-0.062,0 -0.111,-0.05 -0.111,-0.111c0,-0.061 0.049,-0.111 0.111,-0.111Z" style="fill:#008450;stroke:#008450;stroke-width:0.01px;" />
+   </g>
+   <path id="path5986" d="M3.263,0.791l0.006,2.786l-0.316,0.003l-0.017,-2.293l0.327,-0.496Z" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-opacity:0;stroke-width:0.01px;" />
+   <g id="cerchi1" serif:id="cerchi">
+      <path id="verde1" serif:id="verde" d="M3.345,3.273c0.142,0 0.258,0.116 0.258,0.258c0,0.143 -0.116,0.258 -0.258,0.258c-0.142,0 -0.258,-0.115 -0.258,-0.258c0,-0.142 0.116,-0.258 0.258,-0.258Zm0,0.147c0.061,0 0.111,0.05 0.111,0.111c0,0.062 -0.05,0.111 -0.111,0.111c-0.061,0 -0.111,-0.049 -0.111,-0.111c0,-0.061 0.05,-0.111 0.111,-0.111Z" style="fill:#008450;stroke:#008450;stroke-width:0.01px;" />
+   </g>
+   <path id="path833" d="M2.184,2.042l-1.897,-1.551l0.263,-0.203l1.854,1.511l-0.22,0.243Z" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-opacity:0;stroke-width:0.01px;" />
+   <path id="path839" d="M2.404,1.799l0.795,-1.478l0.21,0.16l-0.769,1.485l-0.236,-0.167Z" style="fill:#008450;fill-rule:nonzero;stroke:#000;stroke-opacity:0;stroke-width:0.01px;" />
+   <path id="path841" d="M2.434,2.052l0.709,1.372l0.269,-0.12l-0.782,-1.585l-0.196,0.333Z" style="fill:#008450;fill-rule:nonzero;stroke:#000;stroke-opacity:0;stroke-width:0.01px;" />
+   <path id="path843" d="M0.324,3.197l2.203,-1.374l0.176,0.292l-2.203,1.332l-0.176,-0.25Z" style="fill:#008450;fill-rule:nonzero;stroke:#000;stroke-opacity:0;stroke-width:0.01px;" />
+   <g id="cerchi2" serif:id="cerchi">
+      <path id="verde2" serif:id="verde" d="M0.277,3.162c0.142,0 0.258,0.116 0.258,0.258c0,0.143 -0.116,0.258 -0.258,0.258c-0.142,0 -0.258,-0.115 -0.258,-0.258c0,-0.142 0.116,-0.258 0.258,-0.258Zm0,0.147c0.061,0 0.111,0.05 0.111,0.111c0,0.061 -0.05,0.111 -0.111,0.111c-0.061,0 -0.111,-0.05 -0.111,-0.111c0,-0.061 0.05,-0.111 0.111,-0.111Z" style="fill:#008450;stroke:#008450;stroke-width:0.01px;" />
+   </g>
+   <path id="path866" d="M2.184,2.042l-1.837,-1.518l0.203,-0.236l1.854,1.511l0.213,0.067l-0.433,0.176Z" style="fill:#008450;fill-rule:nonzero;stroke:#000;stroke-opacity:0;stroke-width:0.01px;" />
+   <g id="cerchi3" serif:id="cerchi">
+      <path id="verde3" serif:id="verde" d="M0.34,0.037c0.143,0 0.258,0.116 0.258,0.258c0,0.142 -0.115,0.258 -0.258,0.258c-0.142,0 -0.258,-0.116 -0.258,-0.258c0,-0.142 0.116,-0.258 0.258,-0.258Zm0,0.147c0.062,0 0.111,0.05 0.111,0.111c0,0.061 -0.049,0.111 -0.111,0.111c-0.061,0 -0.111,-0.05 -0.111,-0.111c0,-0.061 0.05,-0.111 0.111,-0.111Z" style="fill:#008450;stroke:#008450;stroke-width:0.01px;" />
+   </g>
+   <path id="path889" d="M0.503,0.624l0.006,1.912l0.324,-0.086l0,-1.706l-0.33,-0.12Z" style="fill:#008450;fill-rule:nonzero;stroke:#000;stroke-opacity:0;stroke-width:0.01px;" />
+   <path id="path891" d="M0.783,0.481l2.383,-0.006l-0.226,0.336l-1.848,0.003l-0.309,-0.333Z" style="fill:#008450;fill-rule:nonzero;stroke:#000;stroke-opacity:0;stroke-width:0.01px;" />
+   <path id="path893" d="M2.936,1.287l0.004,1.158l0.309,0.682l0.014,-0.1l-0.004,-2.333l-0.323,0.593Z" style="fill:#008450;fill-rule:nonzero;stroke:#000;stroke-opacity:0;stroke-width:0.01px;" />
+   <path id="path895" d="M1.309,2.938l1.631,-0.007l0.156,0.336l-2.356,-0.003l0.569,-0.326Z" style="fill:#008450;fill-rule:nonzero;stroke:#000;stroke-opacity:0;stroke-width:0.01px;" />
+   <g id="cerchi4" serif:id="cerchi">
+      <path id="verde4" serif:id="verde" d="M0.666,2.389c0.143,0 0.258,0.115 0.258,0.258c0,0.142 -0.115,0.258 -0.258,0.258c-0.142,0 -0.257,-0.116 -0.257,-0.258c0,-0.143 0.115,-0.258 0.257,-0.258Zm0,0.147c0.062,0 0.112,0.049 0.112,0.111c0,0.061 -0.05,0.111 -0.112,0.111c-0.061,0 -0.111,-0.05 -0.111,-0.111c0,-0.062 0.05,-0.111 0.111,-0.111Z" style="fill:#008450;stroke:#008450;stroke-width:0.01px;" />
+   </g>
+</svg>
