@@ -51,6 +51,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: 'theme-color',
+          content: '#008450',
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
