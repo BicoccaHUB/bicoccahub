@@ -4,7 +4,7 @@ module.exports = {
     title: `BicoccaHUB`,
     description: `La più grande collezione di appunti del corso di informatica degli studenti della Bicocca`,
     author: `@kowalski7cc, @amarusofia, @dlcgold, @daverhapsody`,
-    siteUrl: "https://example.com/",
+    siteUrl: "https://bicoccahub.netlify.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,6 +13,12 @@ module.exports = {
       options: {
         name: `images`,
         path: path.join(__dirname, "src", "images"),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://bicoccahub.netlify.com`,
       },
     },
     `gatsby-transformer-sharp`,
