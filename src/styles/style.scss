@@ -1,3 +1,5 @@
+$enable-gradients: true;
+
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 header {
@@ -22,6 +24,11 @@ header {
 
   h1 {
     font-size: 4rem;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 3rem;
+    }
+
     span {
       text-transform: uppercase;
       font-weight: 300;
@@ -31,21 +38,16 @@ header {
 
 #welcome {
   margin-top: 3rem;
-  h1 {
-    font-weight: 300;
-    font-size: 3rem;
-    text-shadow: 1px 3px 3px rgba($color: #000, $alpha: 0.5)
-  }
-
-  h2 {
-    font-weight: 300;
-    font-size: 2.5rem;
-  }
 }
 
 .interactive {
   &:hover {
     background-color: $gray-300;
+  }
+
+  &.selected {
+    background-color: darkgreen;
+    color: white;
   }
 }
 

@@ -22,10 +22,9 @@ function Header() {
     <header>
       <BackgroundImage fluid={data.hero.childImageSharp.fluid}>
         <Container>
-          <div className="title-container">
-            <h1 className="text-center">
-              <Logo />
-              Bicocca<span>Hub</span>
+          <div className="title-container text-center">
+            <h1 className="">
+              <Logo /> Bicocca<span>Hub</span>
             </h1>
           </div>
         </Container>

@@ -50,7 +50,7 @@ class SubjectCollapse extends React.Component {
         <Collapse in={this.state.open}>
           <ListGroup.Item>
             <Row>
-              <Col xs={12} md={6}>
+              <Col className="pb-3 pb-md-0" xs={12} md={6}>
                 <ListGroup>
                   {this.state.subjects.map(subject => {
                     const nsub = subject.repositories.length
@@ -59,7 +59,7 @@ class SubjectCollapse extends React.Component {
                         onClick={() => {
                           this.setState({ selected: subject })
                         }}
-                        className="interactive"
+                        className={"interactive " + (subject===this.state.selected ? "bg-gradient-primary":"")}
                       >
                         {
                           <Badge
@@ -77,14 +77,14 @@ class SubjectCollapse extends React.Component {
               </Col>
               <Col xs={12} md={6}>
                 {this.state.selected == null ? (
-                  <div>Seleziona una materia per iniziare</div>
+                  <div>Seleziona un corso per iniziare</div>
                 ) : this.state.selected.repositories.length === 0 ? (
                   <div>
-                    Nessun appunto disponibile per la materia selezionata
+                    Nessun appunto disponibile per il corso selezionato
                   </div>
                 ) : (
                   <>
-                    <h2>Appunti diponibili</h2>
+                    <h2>Repository diponibili</h2>
                     <ul>
                       {this.state.selected.repositories.map(repo => {
                         return (
@@ -121,13 +121,13 @@ function IndexPage({ data }) {
       <main>
         <Container>
           <section id="welcome" className="text-center">
-            <h1>Benvenuto</h1>
-            <h2>{data.description.siteMetadata.description}</h2>
+            <h1 className="title">Benvenuto</h1>
+            <h2 className="title">{data.description.siteMetadata.description}</h2>
           </section>
           <hr />
           <section id="downloads">
             <p className="mb-5 text-center">
-              Audentes fortuna iuvat, la fortuna aiuta gli audaci.
+              <b>Audentes fortuna iuvat, la fortuna aiuta gli audaci.</b>
             </p>
             <div className="my-4 text-center">
               <h4>
@@ -153,45 +153,45 @@ function IndexPage({ data }) {
             </ListGroup>
           </section>
           <section id="disclaimer" className="my-5 text-center">
-            <FontAwesomeIcon icon="exclamation-triangle" class="fai" />
+            <FontAwesomeIcon icon="exclamation-triangle" class="fai text-danger" />
             <br />
-            <h2>Disclaimer</h2>
+            <h2 className="text-danger">Disclaimer</h2>
             <p>
               Tutti gli appunti potrebbero contenere errori: nell'eventualità,
               siete pregati di notificarlo ai rispettivi autori.
               <br />
               Il materiale qui contenuto non intende sostituirsi alle lezioni
-              dei professori nè ai testi consigliati da questi ultimi.
+              dei professori né ai testi consigliati da questi ultimi.
             </p>
           </section>
           <section className="mt-5 pt-5 contacts">
             <Row>
               <Col className="text-center">
-                <FontAwesomeIcon icon="code-branch" className="fai" />
-                <br />
-                <h5>
-                  <a
+              <a
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://github.com/GitBicocca/GitBicocca.github.io"
                   >
-                    Contribuisci
-                  </a>
-                </h5>
+                <FontAwesomeIcon icon="code-branch" className="fai" />
+                <br />
+                  <h5>Contribuisci</h5>
+                </a>
                 <p>Inviaci una pull request o contattaci.</p>
               </Col>
               <Col className="text-center">
+                <a href="">
                 <FontAwesomeIcon icon="newspaper" className="fai" />
                 <br />
                 <h5>Notizie</h5>
+                </a>
                 <p>Prossimamente in arrivo!</p>
               </Col>
               <Col className="text-center">
+              <a href="/staff">
                 <FontAwesomeIcon icon="user-friends" className="fai" />
                 <br />
-                <h5>
-                  <a href="/staff">Lo staff</a>
-                </h5>
+                <h5>Lo staff</h5>
+                </a>
                 <p>Conosci le fantastiche persone dietro al progetto</p>
               </Col>
             </Row>

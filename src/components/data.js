@@ -165,7 +165,7 @@ const data = [
         ],
       },
       {
-        name: "fisica",
+        name: "Fisica",
         repositories: [],
       },
     ],
