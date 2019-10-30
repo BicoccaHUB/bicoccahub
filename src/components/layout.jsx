@@ -9,17 +9,16 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "./header"
+import CompactHeader from "./compactheader"
 
-const Layout = ({ children }) => {
+const Layout = ({ hero, children }) => {
   return (
     <div className="d-flex flex-column" style={{ minHeight: "100vh" }}>
-      <Header/>
+      {hero ? <Header /> : <CompactHeader />}
       <div className="container-fluid flex-grow-1" style={{ padding: 0 }}>
         {children}
       </div>
-      <footer>
-        
-      </footer>
+      <footer></footer>
     </div>
   )
 }

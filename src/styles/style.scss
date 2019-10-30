@@ -2,8 +2,8 @@
 
 header {
   .gatsby-image-wrapper {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     @include media-breakpoint-down(sm) {
       padding-top: 4rem;
       padding-bottom: 4rem;
@@ -39,6 +39,13 @@ header {
 
   h2 {
     font-weight: 300;
+    font-size: 2.5rem;
+  }
+}
+
+.interactive {
+  &:hover {
+    background-color: $gray-300;
   }
 }
 
@@ -51,4 +58,37 @@ hr {
   font-size: 3rem;
   max-height: 3rem;
   margin-bottom: .5rem;
+}
+
+.contacts {
+  p {
+    a {
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#staff {
+
+  .avatar {
+    max-height: 100px;
+    max-width: 1000px;
+  }
+}
+
+h1.title {
+  font-weight: 300;
+  text-shadow: 1px 3px 3px rgba($color: #000, $alpha: 0.5);
+  font-size: 3rem;
+}
+h2.title {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+footer {
+  height: 3rem;
 }

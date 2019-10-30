@@ -6,7 +6,21 @@
 
 import "./src/styles/style.scss"
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faChevronCircleRight, faExclamationTriangle, faCodeBranch, faUserFriends, faNewspaper } from '@fortawesome/free-solid-svg-icons'
+import { library } from "@fortawesome/fontawesome-svg-core"
+import {
+  faChevronCircleRight,
+  faChevronCircleDown,
+  faExclamationTriangle,
+  faCodeBranch,
+  faUserFriends,
+  faNewspaper,
+} from "@fortawesome/free-solid-svg-icons"
 
-library.add(faChevronCircleRight, faExclamationTriangle, faCodeBranch, faUserFriends, faNewspaper)
+library.add(
+  faChevronCircleRight,
+  faChevronCircleDown,
+  faExclamationTriangle,
+  faCodeBranch,
+  faUserFriends,
+  faNewspaper
+)

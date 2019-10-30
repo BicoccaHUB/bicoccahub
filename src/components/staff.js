@@ -1,0 +1,55 @@
+const staff = {
+  coders: [
+    {
+      name: "Sofia",
+      image: "https://avatars1.githubusercontent.com/u/45459355?s=460&v=4",
+      url: "https://github.com/amarusofia",
+    },
+    {
+      name: "Kowalski7cc",
+      image: "https://avatars0.githubusercontent.com/u/5065094?s=460&v=4",
+      url: "https://github.com/kowalski7cc",
+    },
+  ],
+  authors: [
+    {
+      name: "Jacopo",
+      image: "https://avatars3.githubusercontent.com/u/45501385?s=460&v=4",
+      url: "https://github.com/JacopoDeAngelis",
+    },
+    {
+      name: "Sofia",
+      image: "https://avatars1.githubusercontent.com/u/45459355?s=460&v=4",
+      url: "https://github.com/amarusofia",
+    },
+    {
+      name: "Dlcgold",
+      image: "https://avatars0.githubusercontent.com/u/31136677?s=460&v=4",
+      url: "https://github.com/dlcgold",
+    },
+    {
+      name: "Ila",
+      image: "https://avatars0.githubusercontent.com/u/29451823?s=460&v=4",
+      url: "https://github.com/ila",
+    },
+    {
+      name: "Bigboss98",
+      image: "https://avatars0.githubusercontent.com/u/13538487?s=460&v=4",
+      url: "https://github.com/bigboss98",
+    },
+    {
+      name: "Daverhapsody",
+      image: "https://avatars1.githubusercontent.com/u/25421192?s=460&v=4",
+      url: "https://github.com/daverhapsody",
+    },
+  ],
+  specialthanks: [
+    {
+      name: "Matt",
+      image: "https://avatars0.githubusercontent.com/u/12385488?s=460&v=4",
+      url: "https://mattbarbier.it/",
+    },
+  ],
+}
+
+export default staff
