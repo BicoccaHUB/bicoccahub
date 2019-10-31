@@ -29,8 +29,9 @@ module.exports = {
         name: `BicoccaHUB`,
         short_name: `BicoccaHUB`,
         start_url: `/`,
-        lang: 'it',
-        description: 'La più grande collezione di appunti del corso di informatica degli studenti della Bicocca',
+        lang: "it",
+        description:
+          "La più grande collezione di appunti del corso di informatica degli studenti della Bicocca",
         background_color: `#ffffff`,
         theme_color: `#008450`,
         display: `browser`,

@@ -119,6 +119,23 @@ const data = [
     year: "Secondo anno",
     subjects: [
       {
+        name: "Basi di dati",
+        repositories: [
+          {
+            owner: "Sofia",
+            url:
+              "https://github.com/amarusofia/Appunti-universitari/tree/master/Basi%20di%20Dati/tex",
+            wip: false,
+          },
+          {
+            owner: "Jacopo",
+            url:
+              "https://github.com/JacopoDeAngelis/Appunti-universitari/tree/master/Secondo%20anno/Basi%20di%20dati",
+            wip: false,
+          },
+        ],
+      },
+      {
         name: "Linguaggi e computabilità",
         repositories: [
           {
@@ -138,6 +155,12 @@ const data = [
             url:
               "https://github.com/dlcgold/Appunti/tree/master/Secondo%20Anno/Linguaggi%20e%20Computabilit%C3%A0",
             wip: false,
+          },
+          {
+            owner: "Dave",
+            url:
+              "https://github.com/daverhapsody/DaveAppunti/tree/master/Secondo%20Anno/Linguaggi%20e%20computabilit%C3%A0",
+            wip: true,
           },
         ],
       },
@@ -162,10 +185,65 @@ const data = [
               "https://github.com/dlcgold/Appunti/tree/master/Secondo%20Anno/Linguaggi%20di%20Programmazione",
             wip: false,
           },
+          {
+            owner: "Dave",
+            url:
+              "https://github.com/daverhapsody/DaveAppunti/tree/master/Secondo%20Anno/Linguaggi%20di%20Programmazione",
+            wip: true,
+          },
         ],
       },
       {
         name: "Fisica",
+        repositories: [
+          {
+            owner: "Dave",
+            url:
+              "https://github.com/daverhapsody/DaveAppunti/tree/master/Secondo%20Anno/Fisica",
+            wip: true,
+          },
+        ],
+      },
+      {
+        name: "Metodi algebrici per l'informatica",
+        repositories: [],
+      },
+      {
+        name: "Probabilità e statistica per l'informatica",
+        repositories: [
+          {
+            owner: "dlcgold, bigboss98",
+            url:
+              "https://github.com/dlcgold/Appunti/tree/master/Secondo%20Anno/Probabilit%C3%A0%20e%20Statistica%20per%20l'Informatica",
+            wip: false,
+          },
+        ],
+      },
+      {
+        name: "Reti e sistemi operativi",
+        repositories: [
+          {
+            owner: "Sofia",
+            url:
+              "https://github.com/amarusofia/Appunti-universitari/tree/master/Sistemi%20Operativi/tex",
+            wip: false,
+          },
+          {
+            owner: "Jacopo",
+            url:
+              "https://github.com/JacopoDeAngelis/Appunti-universitari/tree/master/Secondo%20anno/Reti%20e%20sistemi%20operativi",
+            wip: false,
+          },
+          {
+            owner: "Dave",
+            url:
+              "https://github.com/daverhapsody/DaveAppunti/tree/master/Secondo%20Anno/Reti%20e%20Sistemi%20Operativi",
+            wip: true,
+          },
+        ],
+      },
+      {
+        name: "Sistemi distribuiti",
         repositories: [],
       },
     ],
@@ -174,14 +252,155 @@ const data = [
     year: "Terzo anno",
     subjects: [
       {
-        name: "Sicurezza",
+        name: "Analisi e progetto di algoritmi",
         repositories: [
           {
-            owner: "username",
-            url: "",
+            owner: "Ila",
+            url:
+              "https://github.com/ila/class-notes/tree/master/Analisi%20e%20Progettazione%20Algoritmi",
+            wip: false,
+          },
+          {
+            owner: "dlcgold",
+            url:
+              "https://github.com/dlcgold/Appunti/tree/master/Terzo%20Anno/Analisi%20e%20Progetto%20di%20Algoritmi",
+            wip: true,
+          },
+          {
+            owner: "Jacopo",
+            url:
+              "https://github.com/JacopoDeAngelis/Appunti-universitari/tree/master/Terzo%20anno/Analisi%20e%20progettazione%20di%20algoritmi",
+            wip: true,
+          },
+        ],
+      },
+      {
+        name: "Elementi di bioinformatica",
+        repositories: [
+          {
+            owner: "Ila",
+            url:
+              "https://github.com/ila/class-notes/tree/master/Elementi%20di%20Bioinformatica",
+            wip: false,
+          },
+          {
+            owner: "dlcgold",
+            url:
+              "https://github.com/dlcgold/Appunti/tree/master/Terzo%20Anno/Elementi%20di%20Bioinformatica",
+            wip: true,
+          },
+        ],
+      },
+      {
+        name: "Sicurezza ed affidabilità",
+        repositories: [
+          {
+            owner: "Ila",
+            url:
+              "https://github.com/ila/class-notes/tree/master/Sicurezza%20e%20Affidabilit%C3%A0",
             wip: false,
           },
         ],
+      },
+      {
+        name: "Trattamento e codifica di dati multimediali",
+        repositories: [
+          {
+            owner: "Ila",
+            url:
+              "https://github.com/ila/class-notes/tree/master/Trattamento%20e%20Codifica%20di%20Dati%20Multimediali",
+            wip: false,
+          },
+        ],
+      },
+      {
+        name: "Busniess intelligence per i servizi finanziari",
+        repositories: [],
+      },
+      {
+        name: "Complementi di basi di dati",
+        repositories: [],
+      },
+      {
+        name: "Elaborazione delle immagini",
+        repositories: [],
+      },
+      {
+        name: "Informatica grafica",
+        repositories: [],
+      },
+      {
+        name: "Ingegneria del software",
+        repositories: [
+          {
+            owner: "Jacopo",
+            url:
+              "https://github.com/JacopoDeAngelis/Appunti-universitari/tree/master/Terzo%20anno/Ingegneria%20del%20software",
+            wip: true,
+          },
+        ],
+      },
+      {
+        name: "Interazione uomo-macchina",
+        repositories: [],
+      },
+      {
+        name: "Metodi formali",
+        repositories: [],
+      },
+      {
+        name: "Metodi informatici per la gestione aziendale",
+        repositories: [],
+      },
+      {
+        name: "Programmazione C++",
+        repositories: [
+          {
+            owner: "Jacopo",
+            url:
+              "https://github.com/JacopoDeAngelis/Appunti-universitari/tree/master/Terzo%20anno/Programmazione%20C%2B%2B",
+            wip: true,
+          },
+          {
+            owner: "dlcgold",
+            url:
+              "https://github.com/dlcgold/Appunti/tree/master/Terzo%20Anno/Programmazione%20C%2B%2B",
+            wip: true,
+          },
+        ],
+      },
+      {
+        name: "Busniess intelligence per i servizi finanziari",
+        repositories: [],
+      },
+      {
+        name: "Programmazione di dispositivi mobili",
+        repositories: [],
+      },
+      {
+        name: "Ricerca operativa e pianificazione delle risorse",
+        repositories: [
+          {
+            owner: "Jacopo",
+            url:
+              "https://github.com/JacopoDeAngelis/Appunti-universitari/tree/master/Terzo%20anno/Ricerca%20Operativa%20e%20Pianificazione%20delle%20Risorse",
+            wip: true,
+          },
+          {
+            owner: "dlcgold",
+            url:
+              "https://github.com/dlcgold/Appunti/tree/master/Terzo%20Anno/Ricerca%20Operativa%20e%20Pianificazione%20delle%20Risorse",
+            wip: true,
+          },
+        ],
+      },
+      {
+        name: "Robotica e automazione",
+        repositories: [],
+      },
+      {
+        name: "Sistemi embedded",
+        repositories: [],
       },
     ],
   },
