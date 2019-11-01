@@ -5,7 +5,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import Logo from "../logo.svg"
 
-function Header() {
+const BicoccaHub = () => (
+  <h1>
+    <Logo /> Bicocca<span>Hub</span>
+  </h1>
+)
+
+function Header({ hero }) {
   const data = useStaticQuery(graphql`
     {
       hero: file(relativePath: { eq: "hero.jpg" }) {
@@ -20,15 +26,21 @@ function Header() {
 
   return (
     <header>
-      <BackgroundImage fluid={data.hero.childImageSharp.fluid}>
-        <Container>
-          <div className="title-container text-center rounded">
-            <h1 className="">
-              <Logo /> Bicocca<span>Hub</span>
-            </h1>
-          </div>
-        </Container>
-      </BackgroundImage>
+      {hero === true ? (
+        <BackgroundImage fluid={data.hero.childImageSharp.fluid}>
+          <Container>
+            <div className="title-container text-center rounded">
+              <BicoccaHub />
+            </div>
+          </Container>
+        </BackgroundImage>
+      ) : (
+        <div className="text-center my-5">
+          <a className="hidden-link" href="/">
+            <BicoccaHub />
+          </a>
+        </div>
+      )}
     </header>
   )
 }

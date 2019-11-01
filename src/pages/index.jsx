@@ -194,7 +194,11 @@ function IndexPage({ data }) {
                   <br />
                   <h5>Contribuisci</h5>
                 </a>
-                <p>Inviaci una pull request o contattaci.</p>
+                <p>
+                  Inviaci una pull request o contattaci.
+                  <br />
+                  <a href="/contribuisci">Scopri come.</a>
+                </p>
               </Col>
               <Col className="text-center">
                 <a href="#">

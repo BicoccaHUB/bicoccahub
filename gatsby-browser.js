@@ -10,7 +10,9 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import {
   faChevronCircleRight,
   faChevronCircleDown,
+  faExternalLinkAlt,
   faExclamationTriangle,
+  faCogs,
   faCodeBranch,
   faUserFriends,
   faNewspaper,
@@ -18,7 +20,9 @@ import {
 
 library.add(
   faChevronCircleRight,
+  faCogs,
   faChevronCircleDown,
+  faExternalLinkAlt,
   faExclamationTriangle,
   faCodeBranch,
   faUserFriends,
