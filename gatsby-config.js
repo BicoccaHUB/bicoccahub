@@ -34,8 +34,9 @@ module.exports = {
           "La più grande collezione di appunti del corso di informatica degli studenti della Bicocca",
         background_color: `#ffffff`,
         theme_color: `#008450`,
-        display: `browser`,
-        icon: `src/favicon.png`, // This path is relative to the root of the site.
+        display: `standalone`,
+        // display: `browser`,
+        icon: `src/favicon.png`,
       },
     },
     "gatsby-plugin-sass",
@@ -60,8 +61,6 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-react-svg",
     "gatsby-plugin-catch-links",
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
