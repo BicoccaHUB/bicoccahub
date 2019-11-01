@@ -17,7 +17,9 @@ const Layout = ({ hero, children }) => {
       <div className="container-fluid flex-grow-1" style={{ padding: 0 }}>
         {children}
       </div>
-      <footer></footer>
+      <footer className="text-center align align-middle">
+        BicoccaHUB V2.0 - Fork me on GitHub
+      </footer>
     </div>
   )
 }

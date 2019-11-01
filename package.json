@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "bicoccahub",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "La più grande collezione di appunti del corso di informatica degli studenti della Bicocca",
+  "version": "2.1.0",
+  "author": "Kowalski7cc <kowalski7cc@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
@@ -39,7 +39,7 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "bicocca, appunti, informatica"
   ],
   "license": "MIT",
   "scripts": {
