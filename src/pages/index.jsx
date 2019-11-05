@@ -188,7 +188,7 @@ function IndexPage({ data }) {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://github.com/GitBicocca/GitBicocca.github.io"
+                  href="https://github.com/BicoccaHUB/bicoccahub"
                 >
                   <FontAwesomeIcon icon="code-branch" className="fai" />
                   <br />
