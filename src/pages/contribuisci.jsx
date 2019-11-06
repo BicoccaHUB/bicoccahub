@@ -22,6 +22,7 @@ function Contribuisci({ data }) {
                 marginTop: "2rem",
                 marginBottom: "1rem",
               }}
+              alt="Creazione di una nuova issue"
               src="https://help.github.com/assets/images/help/issues/new_issues_button.png"
             />
             <br />
@@ -38,6 +39,7 @@ function Contribuisci({ data }) {
                 marginTop: "2rem",
                 marginBottom: "1rem",
               }}
+              alt="Creazione di una nuova repository"
               src="https://help.github.com/assets/images/help/repository/create-repository-name.png"
             />
             <br />
@@ -54,6 +56,7 @@ function Contribuisci({ data }) {
                 marginTop: "2rem",
                 marginBottom: "1rem",
               }}
+              alt="Clonazione dei sorgenti di una repository"
               src="https://help.github.com/assets/images/help/repository/clone-repo-clone-url-button.png"
             />
             <br />
@@ -70,6 +73,7 @@ function Contribuisci({ data }) {
                 marginTop: "2rem",
                 marginBottom: "1rem",
               }}
+              alt="Creazione di una nuova pull request"
               src="https://help.github.com/assets/images/help/pull_requests/pullrequest-send.png"
             />
             <br />

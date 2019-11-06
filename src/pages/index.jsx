@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import siteData from "../components/data"
 import {
   Container,
   ListGroup,
@@ -97,7 +96,7 @@ class SubjectCollapse extends React.Component {
                   <div>Nessun appunto disponibile per il corso selezionato</div>
                 ) : (
                   <>
-                    <h2>Repository diponibili</h2>
+                    <h5>Repository diponibili</h5>
                     <ul>
                       {this.state.selected.repositories.map(repo => {
                         return (
@@ -157,7 +156,7 @@ function IndexPage({ data }) {
               </p>
             </div>
             <ListGroup>
-              {siteData.map(subject => {
+              {data.subjects.nodes.map(subject => {
                 return (
                   <SubjectCollapse
                     year={subject.year}
@@ -188,7 +187,7 @@ function IndexPage({ data }) {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://github.com/BicoccaHUB/bicoccahub"
+                  href={data.description.siteMetadata.repoUrl}
                 >
                   <FontAwesomeIcon icon="code-branch" className="fai" />
                   <br />
@@ -201,7 +200,7 @@ function IndexPage({ data }) {
                 </p>
               </Col>
               <Col className="text-center">
-                <a href="#">
+                <a href="/">
                   <FontAwesomeIcon icon="newspaper" className="fai" />
                   <br />
                   <h5>Notizie</h5>
@@ -229,6 +228,20 @@ export const query = graphql`
     description: site {
       siteMetadata {
         description
+        repoUrl
+      }
+    }
+    subjects: allSubjectsYaml {
+      nodes {
+        year
+        subjects {
+          name
+          repositories {
+            owner
+            url
+            wip
+          }
+        }
       }
     }
   }

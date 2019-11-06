@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
-import staff from "../components/staff"
 
 function Staff({ data }) {
   return (
@@ -18,7 +17,7 @@ function Staff({ data }) {
               Tutti gli studenti che hanno contribuito alla creazione del sito
             </p>
             <Row>
-              {staff.coders.map(s => {
+              {data.coders.members.map(s => {
                 return (
                   <Col>
                     <a rel="noopener noreferrer" target="_blank" href={s.url}>
@@ -39,7 +38,7 @@ function Staff({ data }) {
               Tutti gli studenti che hanno condiviso i propri appunti
             </p>
             <Row>
-              {staff.authors.map(s => {
+              {data.authors.members.map(s => {
                 return (
                   <Col>
                     <a rel="noopener noreferrer" target="_blank" href={s.url}>
@@ -60,7 +59,7 @@ function Staff({ data }) {
               Tutti gli studenti che hanno contribuito in altri modi
             </p>
             <Row>
-              {staff.specialthanks.map(s => {
+              {data.thanks.members.map(s => {
                 return (
                   <Col>
                     <a rel="noopener noreferrer" target="_blank" href={s.url}>
@@ -81,5 +80,31 @@ function Staff({ data }) {
     </Layout>
   )
 }
+
+export const query = graphql`
+  {
+    coders: staffYaml(team: {eq: "coders"}) {
+      members {
+        name
+        image
+        url
+      }
+    }
+    authors: staffYaml(team: {eq: "authors"}) {
+      members {
+        name
+        image
+        url
+      }
+    }
+    thanks: staffYaml(team: {eq: "thanks"}) {
+      members {
+        name
+        image
+        url
+      }
+    }
+  }
+`
 
 export default Staff
