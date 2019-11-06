@@ -1,34 +1,41 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Gatsby" src="https://github.com/BicoccaHUB/bicoccahub/raw/master/src/favicon.png" width="60" />
+    <h1 align="center">
+  BicoccaHUB
+</h1>
   </a>
 </p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+La più grande collezione di appunti del corso di informatica degli studenti della Bicocca
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Clona i sorgenti.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Usa il comando `git clone` per clonare i sorgenti del sito
 
     ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    # Clona la repository mediante Git
+    git clone https://github.com/BicoccaHUB/bicoccahub.git
     ```
 
-1.  **Start developing.**
+1.  **Intalla le dipendenze.**
 
-    Navigate into your new site’s directory and start it up.
+    Naviga nel sito e installa le dipendenze necessarie mediante NPM
 
     ```shell
-    cd my-default-starter/
+    cd bicoccahub/
+    npm install
+    ```
+    
+1.  **Inizia a sviluppare.**
+
+    Avvia il server di sviluppo con il comando `gatsby develop`
+
+    ```shell
     gatsby develop
     ```
 
@@ -40,58 +47,54 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 🧐 What's inside?
+## 🧐 Come modifico il sito?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
     .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+    │
+    └┬─ src
+     └┬─ data
+      ├── staff.yml
+      └── subjects.yml
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+1.  **`staff.yml`**: Questo file contiene i dati relativi alle persone che hanno contribuito, diviso in varie sezioni (coders, autori e ringraziamenti speciali)
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+2.  **`subjects.yml`**: Questo file contiene i dati relativi agli indirizzi degi repository contenenti gli appunti. Il file è diviso per anno e per materie. Ogni materia successivamente contiene i vari repositori (indirizzo, autore e se sono in corso di sviluppo)
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## 🎓 Aggiunta di una repository
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+Come specificato nella sezione precedente, il file da modificare per aggiungere nuove repository è il file `subjects.yml`, che è scritto mediante la sintassi di [YAML](https://yaml.org/)
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+```yaml
+- year: <Anno del corso>
+  subjects:
+  - name: <Nome del corso>
+    repositories:
+    - owner: <Nome utente>
+      url: <L'indirizzo della repository>
+```
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+Per aggiungere un nuovo repository sarà quindi sufficiente seguire lo schema sopra citato seguendo le corrette regole di spaziatura, aggiungendo un record di questo tipo:
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+```yaml
+- owner: <Il tuo nome utente>
+  url: <L'indirizzo della tua nuova repository>
+```
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+ottenendo quindi il seguente risultato
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+```yaml
+- year: <Anno del corso>
+  subjects:
+  - name: <Nome del corso>
+    repositories:
+    - owner: <Nome utente>
+      url: <L'indirizzo della repository>
+    - owner: <Il tuo nome utente>
+      url: <L'indirizzo della tua nuova repository>
+```
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+Prima di inviare una [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) è necessario accertarsi che il sito compili senza nessun `error` e possibilmente senza nessun `warning`.
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Ulteriori guide sono disponibili all'indirizzo [https://bicoccahub.netlify.com/contribuisci](https://bicoccahub.netlify.com/contribuisci)
