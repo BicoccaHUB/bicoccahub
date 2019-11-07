@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
+import { graphql } from "gatsby"
 
 function Staff({ data }) {
   return (
@@ -83,21 +84,21 @@ function Staff({ data }) {
 
 export const query = graphql`
   {
-    coders: staffYaml(team: {eq: "coders"}) {
+    coders: staffYaml(team: { eq: "coders" }) {
       members {
         name
         image
         url
       }
     }
-    authors: staffYaml(team: {eq: "authors"}) {
+    authors: staffYaml(team: { eq: "authors" }) {
       members {
         name
         image
         url
       }
     }
-    thanks: staffYaml(team: {eq: "thanks"}) {
+    thanks: staffYaml(team: { eq: "thanks" }) {
       members {
         name
         image

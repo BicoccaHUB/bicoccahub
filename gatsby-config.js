@@ -6,11 +6,11 @@ module.exports = {
     author: `@kowalski7cc, @amarusofia, @dlcgold, @daverhapsody`,
     siteUrl: "https://bicoccahub.netlify.com",
     version: "2.1.0",
-    repoUrl: "https://github.com/BicoccaHUB/bicoccahub"
+    repoUrl: "https://github.com/BicoccaHUB/bicoccahub",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    'gatsby-transformer-yaml',
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

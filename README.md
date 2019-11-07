@@ -8,7 +8,6 @@
   </a>
 </p>
 
-
 La più grande collezione di appunti del corso di informatica degli studenti della Bicocca
 
 ## 🚀 Quick start
@@ -30,7 +29,7 @@ La più grande collezione di appunti del corso di informatica degli studenti del
     cd bicoccahub/
     npm install
     ```
-    
+
 1.  **Inizia a sviluppare.**
 
     Avvia il server di sviluppo con il comando `gatsby develop`
@@ -69,10 +68,10 @@ Come specificato nella sezione precedente, il file da modificare per aggiungere 
 ```yaml
 - year: <Anno del corso>
   subjects:
-  - name: <Nome del corso>
-    repositories:
-    - owner: <Nome utente>
-      url: <L'indirizzo della repository>
+    - name: <Nome del corso>
+      repositories:
+        - owner: <Nome utente>
+          url: <L'indirizzo della repository>
 ```
 
 Per aggiungere un nuovo repository sarà quindi sufficiente seguire lo schema sopra citato seguendo le corrette regole di spaziatura, aggiungendo un record di questo tipo:
@@ -87,12 +86,12 @@ ottenendo quindi il seguente risultato
 ```yaml
 - year: <Anno del corso>
   subjects:
-  - name: <Nome del corso>
-    repositories:
-    - owner: <Nome utente>
-      url: <L'indirizzo della repository>
-    - owner: <Il tuo nome utente>
-      url: <L'indirizzo della tua nuova repository>
+    - name: <Nome del corso>
+      repositories:
+        - owner: <Nome utente>
+          url: <L'indirizzo della repository>
+        - owner: <Il tuo nome utente>
+          url: <L'indirizzo della tua nuova repository>
 ```
 
 Prima di inviare una [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) è necessario accertarsi che il sito compili senza nessun `error` e possibilmente senza nessun `warning`.

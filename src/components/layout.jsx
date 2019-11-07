@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "./header"
-import { useStaticQuery } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Layout = ({ hero, children }) => {
   const data = useStaticQuery(graphql`
@@ -29,7 +29,9 @@ const Layout = ({ hero, children }) => {
         {children}
       </div>
       <footer className="text-center align align-middle">
-        BicoccaHUB {data.site.siteMetadata.version} - Copyright Sofia Amaru ({(new Date()).getFullYear()}), released under MIT License  - <a href={data.site.siteMetadata.repoUrl}>Fork me on GitHub</a>
+        BicoccaHUB {data.site.siteMetadata.version} - Copyright Sofia Amaru (
+        {new Date().getFullYear()}), released under MIT License -{" "}
+        <a href={data.site.siteMetadata.repoUrl}>Fork me on GitHub</a>
       </footer>
     </div>
   )
