@@ -83,13 +83,21 @@ function Contribuisci({ data }) {
             </a>
             <hr />
             <h2 className="title">Come modificare il codice del sito</h2>
-            <FontAwesomeIcon
-              style={{ marginTop: "2rem", marginBottom: "1rem" }}
-              className="fai"
-              icon="cogs"
+            <img
+              style={{
+                width: "100%",
+                maxWidth: "300px",
+                marginTop: "2rem",
+                marginBottom: "1rem",
+              }}
+              alt="Modifica del codice sorgente del sito"
+              src="https://help.github.com/assets/images/help/repository/edit-readme-light.png"
             />
             <br />
-            <p>Presto disponibile una guida</p>
+            <a href="https://github.com/BicoccaHUB/bicoccahub/blob/master/README.md#-quick-start">
+              Scopri come contribuire modificando i sorgenti del sito nella file README del progetto{" "}
+              <FontAwesomeIcon icon="external-link-alt" />
+            </a>
           </Container>
         </section>
       </main>
