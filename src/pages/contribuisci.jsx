@@ -95,8 +95,8 @@ function Contribuisci({ data }) {
             />
             <br />
             <a href="https://github.com/BicoccaHUB/bicoccahub/blob/master/README.md#-quick-start">
-              Scopri come contribuire modificando i sorgenti del sito nella file README del progetto{" "}
-              <FontAwesomeIcon icon="external-link-alt" />
+              Scopri come contribuire modificando i sorgenti del sito nella file
+              README del progetto <FontAwesomeIcon icon="external-link-alt" />
             </a>
           </Container>
         </section>
