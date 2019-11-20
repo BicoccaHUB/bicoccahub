@@ -10,121 +10,122 @@ import {
   Col,
   Collapse,
 } from "react-bootstrap"
+import RepositoryExplorer from "../components/repositoryexplorer"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-class SubjectCollapse extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      open: false,
-      year: props.year,
-      subjects: props.subjects,
-    }
-  }
+// class SubjectCollapse extends React.Component {
+//   constructor(props) {
+//     super(props)
+//     this.state = {
+//       open: false,
+//       year: props.year,
+//       subjects: props.subjects,
+//     }
+//   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      open: nextProps.open || this.state.open,
-      year: nextProps.name || this.state.year,
-      subjects: nextProps.subjects || this.state.subject,
-    })
-  }
+//   componentWillReceiveProps(nextProps) {
+//     this.setState({
+//       open: nextProps.open || this.state.open,
+//       year: nextProps.name || this.state.year,
+//       subjects: nextProps.subjects || this.state.subject,
+//     })
+//   }
 
-  render() {
-    return (
-      <>
-        <ListGroup.Item
-          onClick={() => {
-            this.setState(this.state.open ? { open: false } : { open: true })
-          }}
-          className="interactive"
-        >
-          <FontAwesomeIcon
-            icon={
-              this.state.open ? "chevron-circle-down" : "chevron-circle-right"
-            }
-          />{" "}
-          {this.state.year}
-        </ListGroup.Item>
-        <Collapse in={this.state.open}>
-          <ListGroup.Item>
-            <Row>
-              <Col className="pb-3 pb-md-0" xs={12} md={6}>
-                <ListGroup>
-                  {this.state.subjects.map(subject => {
-                    const nsub = subject.repositories.length
-                    return (
-                      <ListGroup.Item
-                        onClick={() => {
-                          this.setState({ selected: subject })
-                        }}
-                        className={
-                          "interactive " +
-                          (subject === this.state.selected
-                            ? "bg-gradient-primary"
-                            : "")
-                        }
-                      >
-                        {
-                          <Badge
-                            pill
-                            variant={
-                              nsub > 0
-                                ? subject.repositories.some(repo => {
-                                    return (
-                                      repo.wip == null || repo.wip === false
-                                    )
-                                  })
-                                  ? "success"
-                                  : "warning"
-                                : "secondary"
-                            }
-                          >
-                            {nsub}
-                          </Badge>
-                        }{" "}
-                        {subject.name}
-                      </ListGroup.Item>
-                    )
-                  })}
-                </ListGroup>
-              </Col>
-              <Col xs={12} md={6}>
-                {this.state.selected == null ? (
-                  <div>Seleziona un corso per iniziare</div>
-                ) : this.state.selected.repositories.length === 0 ? (
-                  <div>Nessun appunto disponibile per il corso selezionato</div>
-                ) : (
-                  <>
-                    <h5>Repository diponibili</h5>
-                    <ul>
-                      {this.state.selected.repositories.map(repo => {
-                        return (
-                          <li>
-                            <a href={repo.url}>
-                              Appunti di {repo.owner}{" "}
-                              {repo.wip != null && repo.wip ? (
-                                <Badge pill variant="warning">
-                                  !
-                                </Badge>
-                              ) : (
-                                ""
-                              )}
-                            </a>
-                          </li>
-                        )
-                      })}
-                    </ul>
-                  </>
-                )}
-              </Col>
-            </Row>
-          </ListGroup.Item>
-        </Collapse>
-      </>
-    )
-  }
-}
+//   render() {
+//     return (
+//       <>
+//         <ListGroup.Item
+//           onClick={() => {
+//             this.setState(this.state.open ? { open: false } : { open: true })
+//           }}
+//           className="interactive"
+//         >
+//           <FontAwesomeIcon
+//             icon={
+//               this.state.open ? "chevron-circle-down" : "chevron-circle-right"
+//             }
+//           />{" "}
+//           {this.state.year}
+//         </ListGroup.Item>
+//         <Collapse in={this.state.open}>
+//           <ListGroup.Item>
+// <Row>
+//   <Col className="pb-3 pb-md-0" xs={12} md={6}>
+//     <ListGroup>
+//       {this.state.subjects.map(subject => {
+//         const nsub = subject.repositories.length
+//         return (
+//           <ListGroup.Item
+//             onClick={() => {
+//               this.setState({ selected: subject })
+//             }}
+//             className={
+//               "interactive " +
+//               (subject === this.state.selected
+//                 ? "bg-gradient-primary"
+//                 : "")
+//             }
+//           >
+//             {
+//               <Badge
+//                 pill
+//                 variant={
+//                   nsub > 0
+//                     ? subject.repositories.some(repo => {
+//                         return (
+//                           repo.wip == null || repo.wip === false
+//                         )
+//                       })
+//                       ? "success"
+//                       : "warning"
+//                     : "secondary"
+//                 }
+//               >
+//                 {nsub}
+//               </Badge>
+//             }{" "}
+//             {subject.name}
+//           </ListGroup.Item>
+//         )
+//       })}
+//     </ListGroup>
+//   </Col>
+//   <Col xs={12} md={6}>
+//     {this.state.selected == null ? (
+//       <div>Seleziona un corso per iniziare</div>
+//     ) : this.state.selected.repositories.length === 0 ? (
+//       <div>Nessun appunto disponibile per il corso selezionato</div>
+//     ) : (
+//       <>
+//         <h5>Repository diponibili</h5>
+//         <ul>
+//           {this.state.selected.repositories.map(repo => {
+//             return (
+//               <li>
+//                 <a href={repo.url}>
+//                   Appunti di {repo.owner}{" "}
+//                   {repo.wip != null && repo.wip ? (
+//                     <Badge pill variant="warning">
+//                       !
+//                     </Badge>
+//                   ) : (
+//                     ""
+//                   )}
+//                 </a>
+//               </li>
+//             )
+//           })}
+//         </ul>
+//       </>
+//     )}
+//   </Col>
+// </Row>
+//           </ListGroup.Item>
+//         </Collapse>
+//       </>
+//     )
+//   }
+// }
 
 function IndexPage({ data }) {
   return (
@@ -155,16 +156,7 @@ function IndexPage({ data }) {
                 Contribuisci alla loro stesura!
               </p>
             </div>
-            <ListGroup>
-              {data.subjects.nodes.map(subject => {
-                return (
-                  <SubjectCollapse
-                    year={subject.year}
-                    subjects={subject.subjects}
-                  />
-                )
-              })}
-            </ListGroup>
+            <RepositoryExplorer />
           </section>
           <section id="disclaimer" className="my-5 text-center">
             <FontAwesomeIcon
@@ -172,7 +164,7 @@ function IndexPage({ data }) {
               class="fai text-danger"
             />
             <br />
-            <h2 className="text-danger">Disclaimer</h2>
+            <h2 className="text-danger">Attenzione</h2>
             <p>
               Tutti gli appunti potrebbero contenere errori: nell'eventualità,
               siete pregati di notificarlo ai rispettivi autori.
