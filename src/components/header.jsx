@@ -7,7 +7,7 @@ import Logo from "../logo.svg"
 
 const BicoccaHub = () => (
   <h1>
-    <Logo /> Bicocca<span>Hub</span>
+    <Logo className="logo" /> Bicocca<span>Hub</span>
   </h1>
 )
 

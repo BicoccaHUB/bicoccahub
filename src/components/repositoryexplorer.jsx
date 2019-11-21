@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react"
-import { useStaticQuery, graphql, StaticQuery } from "gatsby"
+import React, { useState } from "react"
+import { graphql, StaticQuery } from "gatsby"
 import { Accordion, Card, Row, Col, ListGroup, Badge } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -37,9 +37,14 @@ class RepositoryExplorer extends React.Component {
                 return (
                   <Card border="success" key={index}>
                     <Accordion.Toggle
+                      className="interactive"
                       onClick={() => {
-                        setCourseData(null)
-                        setSelected(index)
+                        if (selected === index) {
+                          setSelected(null)
+                        } else {
+                          setCourseData(null)
+                          setSelected(index)
+                        }
                       }}
                       eventKey={index}
                       as={Card.Header}
@@ -58,10 +63,12 @@ class RepositoryExplorer extends React.Component {
                         <Row>
                           <Col className="pb-3 pb-md-0" xs={12} md={6}>
                             <ListGroup>
-                              {subject.subjects.map(course => {
+                              {subject.subjects.map((course, index) => {
                                 const nsub = course.repositories.length
                                 return (
                                   <ListGroup.Item
+                                    key={index}
+                                    className="interactive"
                                     active={couseData === course ? true : false}
                                     onClick={() => {
                                       setCourseData(course)
