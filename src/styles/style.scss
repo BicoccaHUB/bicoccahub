@@ -53,14 +53,9 @@ header {
   margin-top: 3rem;
 }
 
-.interactive {
+.interactive:not(.active) {
   &:hover {
     background-color: $gray-300;
-  }
-
-  &.selected {
-    background-color: darkgreen;
-    color: white;
   }
 }
 

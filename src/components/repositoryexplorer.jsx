@@ -35,7 +35,7 @@ class RepositoryExplorer extends React.Component {
               {data.subjects.nodes.map((subject, index) => {
                 const [couseData, setCourseData] = useState(null)
                 return (
-                  <Card border="success" key={index}>
+                  <Card key={index}>
                     <Accordion.Toggle
                       className="interactive"
                       onClick={() => {
