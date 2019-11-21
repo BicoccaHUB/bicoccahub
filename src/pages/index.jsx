@@ -8,18 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Disclaimer = () => (
   <>
-    <div className="my-4 text-center">
-      <h4>
-        <Badge pill variant="warning">
-          !
-        </Badge>{" "}
-        Appunti in corso d'opera
-      </h4>
-      <p>
-        Gli appunti con questa indicazione sono ancora incompleti. Contribuisci
-        alla loro stesura!
-      </p>
-    </div>
     <div className="mt-5 text-center">
       <FontAwesomeIcon
         icon="exclamation-triangle"
@@ -33,6 +21,18 @@ const Disclaimer = () => (
         <br />
         Il materiale qui contenuto non intende sostituirsi alle lezioni dei
         professori né ai testi consigliati da questi ultimi.
+      </p>
+    </div>
+    <div className="mt-4 text-center">
+      <h4>
+        <Badge pill variant="warning">
+          !
+        </Badge>{" "}
+        Appunti in corso d'opera
+      </h4>
+      <p>
+        Gli appunti con questa indicazione sono ancora incompleti. Contribuisci
+        alla loro stesura!
       </p>
     </div>
   </>
