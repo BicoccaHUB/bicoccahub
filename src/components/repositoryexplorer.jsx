@@ -4,9 +4,6 @@ import { Accordion, Card, Row, Col, ListGroup, Badge } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class RepositoryExplorer extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     return (
