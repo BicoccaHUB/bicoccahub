@@ -162,3 +162,13 @@
     repositories: []
   - name: Sistemi embedded
     repositories: []
+- year: Primo anno Magistrale
+  subjects:
+  - name: Teoria delle Computazione
+    repositories:
+    - owner: Antonio
+      url: https://github.com/avivace/compsci/blob/master/masters/computation-theory/notes.pdf
+  - name: Modelli della Concorrenza
+    repositories:
+    - owner: Antonio
+      url: https://github.com/avivace/compsci/tree/master/masters/concurrent-models
