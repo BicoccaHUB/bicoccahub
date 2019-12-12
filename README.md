@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
+  <a href="https://bicoccahub.netlify.com/">
     <img alt="Gatsby" src="https://github.com/BicoccaHUB/bicoccahub/raw/master/src/favicon.png" width="60" />
     <h1 align="center">
   BicoccaHUB
@@ -38,17 +38,17 @@ La più grande collezione di appunti del corso di informatica degli studenti del
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+1.  **Inizia a modificare il sorgente!**
 
-    Your site is now running at `http://localhost:8000`!
+    La versione in sviluppo del sito è accessible a `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    _Nota: Avrai bisogno anche di un secondo link: _`http://localhost:8000/___graphql`_. È uno strumento che puoi usare per fare query sui dati. Per saperne di più, controlla questo [Tutorial Gatsby](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Apri la cartella `my-default-starter` con il tuo editor prefereito e modifica il file `src/pages/index.js`. Salva e vedrai i tuoi cambiamenti immediatamente visibili!
 
 ## 🧐 Come modifico il sito?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+Ecco una rapido sguardo ai file e cartelle principali che trovi in un progetto Gatsby.
 
     .
     │
