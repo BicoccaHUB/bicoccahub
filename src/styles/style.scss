@@ -2,7 +2,17 @@ $enable-gradients: true;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
+  .hero-image {
+    @media (min-height: 550px) {
+      height: 70vh;
+    }
+  }
+
   .gatsby-image-wrapper {
     padding-top: 5rem;
     padding-bottom: 5rem;

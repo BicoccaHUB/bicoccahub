@@ -5,6 +5,11 @@ import SEO from "../components/seo"
 import { Container, Badge, Row, Col } from "react-bootstrap"
 import RepositoryExplorer from "../components/repositoryexplorer"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import W2l from "../images/w2l/wikitolearn-emblem.svg"
+
+const WikiToLearn = () => (
+  <span style={{ fontWeight: 'bolder' }}><span style={{ color: '#db3e14' }}>wiki</span><span style={{ color: '#ffbc31' }}>to</span><span style={{ color: '#69b140' }}>learn</span></span>
+)
 
 const Disclaimer = () => (
   <>
@@ -76,19 +81,27 @@ function IndexPage({ data }) {
                   <h5>Contribuisci</h5>
                 </a>
                 <p>
-                  Inviaci una pull request o contattaci.
+                  Inviaci una pull request o contattaci
                   <br />
-                  <a href="/contribuisci">Scopri come.</a>
+                  <a href="/contribuisci">Scopri come</a>
                 </p>
               </Col>
-              {/* <Col className="text-center">
-                <a href="/">
+              <Col className="text-center">
+                <a href="https://t.me/RappreDiscoBicocca">
                   <FontAwesomeIcon icon="newspaper" className="fai" />
                   <br />
                   <h5>Notizie</h5>
                 </a>
-                <p>Prossimamente in arrivo!</p>
-              </Col> */}
+                <p>Leggi le ultime notizie sul canale di rappresentanza di DISCO</p>
+              </Col>
+              <Col className="text-center">
+                <a href="https://it.wikitolearn.org/Informatica">
+                  <W2l className="fai" />
+                  <br />
+                  <h5><WikiToLearn /></h5>
+                </a>
+                <p>Accedi ai corsi di informatica su wikitolearn</p>
+              </Col>
               <Col className="text-center">
                 <a href="/staff">
                   <FontAwesomeIcon icon="user-friends" className="fai" />

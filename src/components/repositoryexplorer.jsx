@@ -2,6 +2,11 @@ import React, { useState } from "react"
 import { graphql, StaticQuery } from "gatsby"
 import { Accordion, Card, Row, Col, ListGroup, Badge } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import W2l from "../images/w2l/wikitolearn-emblem.svg"
+
+const WikiToLearn = () => (
+  <span style={{ fontWeight: 'bolder' }}><span style={{ color: '#db3e14' }}>wiki</span><span style={{ color: '#ffbc31' }}>to</span><span style={{ color: '#69b140' }}>learn</span></span>
+)
 
 class RepositoryExplorer extends React.Component {
 
@@ -15,6 +20,7 @@ class RepositoryExplorer extends React.Component {
                 year
                 subjects {
                   name
+                  w2l
                   repositories {
                     owner
                     url
@@ -77,11 +83,11 @@ class RepositoryExplorer extends React.Component {
                                         variant={
                                           nsub > 0
                                             ? course.repositories.some(repo => {
-                                                return (
-                                                  repo.wip == null ||
-                                                  repo.wip === false
-                                                )
-                                              })
+                                              return (
+                                                repo.wip == null ||
+                                                repo.wip === false
+                                              )
+                                            })
                                               ? "success"
                                               : "warning"
                                             : "secondary"
@@ -126,39 +132,41 @@ class RepositoryExplorer extends React.Component {
                                   {couseData.repositories.map((repo, index) => (
                                     <li key={index}>
                                       <a href={repo.url}>
-                                        Appunti di {repo.owner}{" "}
+                                        <FontAwesomeIcon icon={["fab", "github"]} />
+                                        {" "}Appunti di {repo.owner}{" "}
                                         {repo.wip != null && repo.wip ? (
                                           <Badge pill variant="warning">
                                             !
                                           </Badge>
                                         ) : (
-                                          ""
-                                        )}
+                                            ""
+                                          )}
                                       </a>
                                     </li>
                                   ))}
+                                  {couseData.w2l != null ? <li><a href={"https://it.wikitolearn.org/" + couseData.w2l}><W2l style={{ height: '1rem', width: '1rem' }} /> Appunti su <WikiToLearn /></a></li> : ''}
                                 </ul>
                               </>
                             ) : (
-                              <div
-                                className="d-flex flex-column"
-                                style={{ height: "100%", display: "block" }}
-                              >
-                                <div className="d-flex align-items-center justify-content-center flex-grow-1">
-                                  <div className="text-center">
-                                    <FontAwesomeIcon
-                                      icon="times"
-                                      className="fai text-danger"
-                                    />
-                                    <br />
-                                    <strong>
-                                      Nessun appunto disponibile per il corso
-                                      selezionato
+                                  <div
+                                    className="d-flex flex-column"
+                                    style={{ height: "100%", display: "block" }}
+                                  >
+                                    <div className="d-flex align-items-center justify-content-center flex-grow-1">
+                                      <div className="text-center">
+                                        <FontAwesomeIcon
+                                          icon="times"
+                                          className="fai text-danger"
+                                        />
+                                        <br />
+                                        <strong>
+                                          Nessun appunto disponibile per il corso
+                                          selezionato
                                     </strong>
+                                      </div>
+                                    </div>
                                   </div>
-                                </div>
-                              </div>
-                            )}
+                                )}
                           </Col>
                         </Row>
                       </Card.Body>
