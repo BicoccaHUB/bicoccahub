@@ -87,7 +87,7 @@ function IndexPage({ data }) {
                 </p>
               </Col>
               <Col className="text-center">
-                <a href="https://t.me/RappreDiscoBicocca">
+                <a href="https://t.me/s/RappreDiscoBicocca">
                   <FontAwesomeIcon icon="newspaper" className="fai" />
                   <br />
                   <h5>Notizie</h5>
