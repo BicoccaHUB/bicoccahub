@@ -135,10 +135,7 @@
     - name: Informatica grafica
       repositories: []
     - name: Ingegneria del software
-      repositories:
-        - owner: Jacopo
-          url: https://github.com/JacopoDeAngelis/Appunti-universitari/tree/master/Terzo%20anno/Ingegneria%20del%20software
-          wip: true
+      repositories: []
     - name: Interazione uomo-macchina
       repositories: []
     - name: Metodi formali
