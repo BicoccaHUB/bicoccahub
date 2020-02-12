@@ -87,9 +87,13 @@ class RepositoryExplorer extends React.Component {
                                         pill
                                         variant={
                                           nsub > 0
-                                            ? course.repositories.some(repo => !repo.wip)
+                                            ? course.repositories.some(
+                                                repo => !repo.wip
+                                              )
                                               ? "success"
-                                              : (course.w2l ? "danger" : "warning")
+                                              : course.w2l
+                                              ? "danger"
+                                              : "warning"
                                             : "secondary"
                                         }
                                       >
@@ -125,32 +129,45 @@ class RepositoryExplorer extends React.Component {
                                   </div>
                                 </div>
                               </div>
-                            ) : couseData.repositories.length > 0 || couseData.w2l ? (
+                            ) : couseData.repositories.length > 0 ||
+                              couseData.w2l ? (
                               <>
-                                {couseData.repositories.length > 0 ? <><h5>Repository disponibili</h5>
-                                <ul>
-                                  {couseData.repositories.map((repo, index) => (
-                                    <li key={index}>
-                                      <a href={repo.url}>
-                                        <FontAwesomeIcon
-                                          icon={["fab", "github"]}
-                                        />{" "}
-                                        Appunti di {repo.owner}{" "}
-                                        {repo.wip != null && repo.wip ? (
-                                          <Badge pill variant="warning">
-                                            !
-                                          </Badge>
-                                        ) : (
-                                            ""
-                                          )}
-                                      </a>
-                                    </li>
-                                  ))}
-                                </ul></>:""}
+                                {couseData.repositories.length > 0 ? (
+                                  <>
+                                    <h5>Repository disponibili</h5>
+                                    <ul>
+                                      {couseData.repositories.map(
+                                        (repo, index) => (
+                                          <li key={index}>
+                                            <a href={repo.url}>
+                                              <FontAwesomeIcon
+                                                icon={["fab", "github"]}
+                                              />{" "}
+                                              Appunti di {repo.owner}{" "}
+                                              {repo.wip != null && repo.wip ? (
+                                                <Badge pill variant="warning">
+                                                  !
+                                                </Badge>
+                                              ) : (
+                                                ""
+                                              )}
+                                            </a>
+                                          </li>
+                                        )
+                                      )}
+                                    </ul>
+                                  </>
+                                ) : (
+                                  ""
+                                )}
 
                                 {couseData.w2l ? (
                                   <>
-                                    {couseData.repositories.length > 0 ? <hr /> : ""}
+                                    {couseData.repositories.length > 0 ? (
+                                      <hr />
+                                    ) : (
+                                      ""
+                                    )}
                                     <h5>Altre risorse</h5>
                                     <ul>
                                       {couseData.w2l != null ? (
@@ -171,34 +188,34 @@ class RepositoryExplorer extends React.Component {
                                           </a>
                                         </li>
                                       ) : (
-                                          ""
-                                        )}
+                                        ""
+                                      )}
                                     </ul>
                                   </>
                                 ) : (
-                                    <></>
-                                  )}
+                                  <></>
+                                )}
                               </>
                             ) : (
-                                  <div
-                                    className="d-flex flex-column"
-                                    style={{ height: "100%", display: "block" }}
-                                  >
-                                    <div className="d-flex align-items-center justify-content-center flex-grow-1">
-                                      <div className="text-center">
-                                        <FontAwesomeIcon
-                                          icon="times"
-                                          className="fai text-danger"
-                                        />
-                                        <br />
-                                        <strong>
-                                          Nessun appunto disponibile per il corso
-                                          selezionato
+                              <div
+                                className="d-flex flex-column"
+                                style={{ height: "100%", display: "block" }}
+                              >
+                                <div className="d-flex align-items-center justify-content-center flex-grow-1">
+                                  <div className="text-center">
+                                    <FontAwesomeIcon
+                                      icon="times"
+                                      className="fai text-danger"
+                                    />
+                                    <br />
+                                    <strong>
+                                      Nessun appunto disponibile per il corso
+                                      selezionato
                                     </strong>
-                                      </div>
-                                    </div>
                                   </div>
-                                )}
+                                </div>
+                              </div>
+                            )}
                           </Col>
                         </Row>
                       </Card.Body>

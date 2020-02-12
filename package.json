@@ -2,7 +2,7 @@
   "name": "bicoccahub",
   "private": true,
   "description": "La più grande collezione di appunti del corso di informatica degli studenti della Bicocca",
-  "version": "2.2.0",
+  "version": "2.3.1",
   "author": "Kowalski7cc <kowalski7cc@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
