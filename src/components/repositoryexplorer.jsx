@@ -125,9 +125,9 @@ class RepositoryExplorer extends React.Component {
                                   </div>
                                 </div>
                               </div>
-                            ) : couseData.repositories.length > 0 ? (
+                            ) : couseData.repositories.length > 0 || couseData.w2l ? (
                               <>
-                                <h5>Repository disponibili</h5>
+                                {couseData.repositories.length > 0 ? <><h5>Repository disponibili</h5>
                                 <ul>
                                   {couseData.repositories.map((repo, index) => (
                                     <li key={index}>
@@ -146,11 +146,11 @@ class RepositoryExplorer extends React.Component {
                                       </a>
                                     </li>
                                   ))}
-                                </ul>
+                                </ul></>:""}
 
                                 {couseData.w2l ? (
                                   <>
-                                    <hr />
+                                    {couseData.repositories.length > 0 ? <hr /> : ""}
                                     <h5>Altre risorse</h5>
                                     <ul>
                                       {couseData.w2l != null ? (
