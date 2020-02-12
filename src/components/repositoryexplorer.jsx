@@ -87,14 +87,9 @@ class RepositoryExplorer extends React.Component {
                                         pill
                                         variant={
                                           nsub > 0
-                                            ? course.repositories.some(repo => {
-                                              return (
-                                                repo.wip == null ||
-                                                repo.wip === false
-                                              )
-                                            })
+                                            ? course.repositories.some(repo => !repo.wip)
                                               ? "success"
-                                              : "warning"
+                                              : (course.w2l ? "danger" : "warning")
                                             : "secondary"
                                         }
                                       >
