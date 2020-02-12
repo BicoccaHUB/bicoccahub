@@ -67,7 +67,7 @@ class RepositoryExplorer extends React.Component {
                           <Col className="pb-3 pb-md-0" xs={12} md={6}>
                             <ListGroup>
                               {subject.subjects.map((course, index) => {
-                                const nsub = course.repositories.length
+                                const nsub = course.repositories.length + (course.w2l ? 1 : 0)
                                 return (
                                   <ListGroup.Item
                                     key={index}
