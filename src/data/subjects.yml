@@ -110,6 +110,9 @@
         - owner: Jacopo
           url: https://github.com/JacopoDeAngelis/Appunti-universitari/tree/master/Terzo%20anno/Analisi%20e%20progettazione%20di%20algoritmi
           wip: true
+        - owner: Jacopo Maltagliati
+          url: https://github.com/jack23247/ricettario
+          wip: true
     - name: Elementi di bioinformatica
       repositories:
         - owner: Ila
