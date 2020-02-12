@@ -5,11 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import W2l from "../images/w2l/wikitolearn-emblem.svg"
 
 const WikiToLearn = () => (
-  <span style={{ fontWeight: 'bolder' }}><span style={{ color: '#db3e14' }}>wiki</span><span style={{ color: '#ffbc31' }}>to</span><span style={{ color: '#69b140' }}>learn</span></span>
+  <span style={{ fontWeight: "bolder" }}>
+    <span style={{ color: "#db3e14" }}>wiki</span>
+    <span style={{ color: "#ffbc31" }}>to</span>
+    <span style={{ color: "#69b140" }}>learn</span>
+  </span>
 )
 
 class RepositoryExplorer extends React.Component {
-
   render() {
     return (
       <StaticQuery
@@ -67,7 +70,9 @@ class RepositoryExplorer extends React.Component {
                           <Col className="pb-3 pb-md-0" xs={12} md={6}>
                             <ListGroup>
                               {subject.subjects.map((course, index) => {
-                                const nsub = course.repositories.length + (course.w2l ? 1 : 0)
+                                const nsub =
+                                  course.repositories.length +
+                                  (course.w2l ? 1 : 0)
                                 return (
                                   <ListGroup.Item
                                     key={index}
@@ -127,13 +132,15 @@ class RepositoryExplorer extends React.Component {
                               </div>
                             ) : couseData.repositories.length > 0 ? (
                               <>
-                                <h5>Repository disponibili:</h5>
+                                <h5>Repository disponibili</h5>
                                 <ul>
                                   {couseData.repositories.map((repo, index) => (
                                     <li key={index}>
                                       <a href={repo.url}>
-                                        <FontAwesomeIcon icon={["fab", "github"]} />
-                                        {" "}Appunti di {repo.owner}{" "}
+                                        <FontAwesomeIcon
+                                          icon={["fab", "github"]}
+                                        />{" "}
+                                        Appunti di {repo.owner}{" "}
                                         {repo.wip != null && repo.wip ? (
                                           <Badge pill variant="warning">
                                             !
@@ -144,8 +151,38 @@ class RepositoryExplorer extends React.Component {
                                       </a>
                                     </li>
                                   ))}
-                                  {couseData.w2l != null ? <li><a href={"https://it.wikitolearn.org/" + couseData.w2l}><W2l style={{ height: '1rem', width: '1rem' }} /> Appunti su <WikiToLearn /></a></li> : ''}
                                 </ul>
+
+                                {couseData.w2l ? (
+                                  <>
+                                    <hr />
+                                    <h5>Altre risorse</h5>
+                                    <ul>
+                                      {couseData.w2l != null ? (
+                                        <li>
+                                          <a
+                                            href={
+                                              "https://it.wikitolearn.org/" +
+                                              couseData.w2l
+                                            }
+                                          >
+                                            <W2l
+                                              style={{
+                                                height: "1rem",
+                                                width: "1rem",
+                                              }}
+                                            />{" "}
+                                            Appunti su <WikiToLearn />
+                                          </a>
+                                        </li>
+                                      ) : (
+                                          ""
+                                        )}
+                                    </ul>
+                                  </>
+                                ) : (
+                                    <></>
+                                  )}
                               </>
                             ) : (
                                   <div
