@@ -42,8 +42,8 @@ module.exports = {
         lang: "it",
         description:
           "La più grande collezione di appunti del corso di informatica degli studenti della Bicocca",
-        background_color: `#ffffff`,
-        theme_color: `#008450`,
+        background_color: `#008450`,
+        theme_color: `#fff`,
         display: `standalone`,
         // display: `browser`,
         icon: `src/favicon.svg`,
