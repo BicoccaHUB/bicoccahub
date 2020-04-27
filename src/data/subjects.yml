@@ -79,8 +79,7 @@
     - name: Fisica
       repositories:
         - owner: Dave
-          url: https://github.com/daverhapsody/DaveAppunti/tree/master/Secondo%20Anno/Fisica
-          wip: true
+          url: https://github.com/daverhapsody/DaveAppunti/tree/master/Secondo%20Anno/Primo%20Semestre/Fisica
     - name: Metodi algebrici per l'informatica
       repositories: []
     - name: Probabilità e statistica per l'informatica
