@@ -46,7 +46,7 @@ function IndexPage({ data }) {
   return (
     <Layout hero>
       <SEO />
-      <main>
+      <main id="main">
         <Container>
           <section id="welcome" className="text-center">
             {/* <h1 className="title">Benvenuto</h1> */}
