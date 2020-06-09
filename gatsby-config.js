@@ -32,7 +32,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        useMozJpeg: true,
+        stripMetadata: true,
+        defaultQuality: 70,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -40,12 +47,14 @@ module.exports = {
         short_name: `BicoccaHUB`,
         start_url: `/`,
         lang: "it",
+        icon_options: {
+          purpose: "any maskable",
+        },
         description:
           "La più grande collezione di appunti del corso di informatica degli studenti della Bicocca",
         background_color: `#008450`,
         theme_color: `#fff`,
         display: `standalone`,
-        // display: `browser`,
         icon: `src/favicon.svg`,
       },
     },
@@ -68,9 +77,22 @@ module.exports = {
         showSpinner: false,
       },
     },
+    "gatsby-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-react-svg",
     "gatsby-plugin-catch-links",
     `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-netlify",
+      options: {
+        headers: {
+          "/sw.js": ["Cache-Control: no-cache"],
+        },
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
+      },
+    },
   ],
+  
 }
