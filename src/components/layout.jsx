@@ -25,7 +25,11 @@ const Layout = ({ hero, children }) => {
   return (
     <div className="d-flex flex-column" style={{ minHeight: "100vh" }}>
       <Header hero={hero} />
-      <div id="main-view" className="container-fluid flex-grow-1" style={{ padding: 0 }}>
+      <div
+        id="main-view"
+        className="container-fluid flex-grow-1"
+        style={{ padding: 0 }}
+      >
         {children}
       </div>
       <footer className="text-center align align-middle">

@@ -18,7 +18,7 @@ function Staff({ data }) {
               Tutti gli studenti che hanno contribuito alla creazione del sito
             </p>
             <Row>
-              {data.coders.members.map(s => {
+              {data.coders.members.map((s) => {
                 return (
                   <Col>
                     <a rel="noopener noreferrer" target="_blank" href={s.url}>
@@ -39,7 +39,7 @@ function Staff({ data }) {
               Tutti gli studenti che hanno condiviso i propri appunti
             </p>
             <Row>
-              {data.authors.members.map(s => {
+              {data.authors.members.map((s) => {
                 return (
                   <Col>
                     <a rel="noopener noreferrer" target="_blank" href={s.url}>
@@ -60,7 +60,7 @@ function Staff({ data }) {
               Tutti gli studenti che hanno contribuito in altri modi
             </p>
             <Row>
-              {data.thanks.members.map(s => {
+              {data.thanks.members.map((s) => {
                 return (
                   <Col>
                     <a rel="noopener noreferrer" target="_blank" href={s.url}>

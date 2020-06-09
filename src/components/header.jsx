@@ -31,7 +31,7 @@ function Header({ hero }) {
         <BackgroundImage fluid={data.hero.childImageSharp.fluid}>
           <div
             className="d-flex flex-column"
-            style={{ height: "100vh", display: "block" }}
+            style={{ height: "60vh", display: "block" }}
           >
             <div className="d-flex text-center align-items-center justify-content-center flex-grow-1">
               <Container>
@@ -39,7 +39,7 @@ function Header({ hero }) {
                   <BicoccaHub />
                 </div>
                 <Button className="mt-5" href="#main">
-                  <FontAwesomeIcon icon="long-arrow-alt-down"/> Scorri
+                  <FontAwesomeIcon icon="long-arrow-alt-down" /> Scorri
                 </Button>
               </Container>
             </div>

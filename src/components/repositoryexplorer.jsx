@@ -34,7 +34,7 @@ class RepositoryExplorer extends React.Component {
             }
           }
         `}
-        render={data => {
+        render={(data) => {
           const [selected, setSelected] = useState(null)
           return (
             <Accordion>
@@ -88,7 +88,7 @@ class RepositoryExplorer extends React.Component {
                                         variant={
                                           nsub > 0
                                             ? course.repositories.some(
-                                                repo => !repo.wip
+                                                (repo) => !repo.wip
                                               )
                                               ? "success"
                                               : course.w2l

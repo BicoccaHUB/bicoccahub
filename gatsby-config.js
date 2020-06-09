@@ -5,7 +5,7 @@ module.exports = {
     description: `La più grande collezione di appunti del corso di informatica degli studenti della Bicocca`,
     author: `@kowalski7cc, @amarusofia, @dlcgold, @daverhapsody`,
     siteUrl: "https://bicoccahub.netlify.com",
-    version: "2.3.1",
+    version: "2.3.2",
     repoUrl: "https://github.com/BicoccaHUB/bicoccahub",
   },
   plugins: [

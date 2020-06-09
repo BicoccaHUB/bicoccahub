@@ -8,7 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import W2l from "../images/w2l/wikitolearn-emblem.svg"
 
 const WikiToLearn = () => (
-  <span style={{ fontWeight: 'bolder' }}><span style={{ color: '#db3e14' }}>wiki</span><span style={{ color: '#ffbc31' }}>to</span><span style={{ color: '#69b140' }}>learn</span></span>
+  <span style={{ fontWeight: "bolder" }}>
+    <span style={{ color: "#db3e14" }}>wiki</span>
+    <span style={{ color: "#ffbc31" }}>to</span>
+    <span style={{ color: "#69b140" }}>learn</span>
+  </span>
 )
 
 const Disclaimer = () => (
@@ -70,7 +74,7 @@ function IndexPage({ data }) {
           </section>
           <section className="mt-5 pt-5 contacts">
             <Row>
-              <Col className="text-center">
+              <Col xs={12} sm={6} md className="text-center">
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
@@ -86,23 +90,27 @@ function IndexPage({ data }) {
                   <a href="/contribuisci">Scopri come</a>
                 </p>
               </Col>
-              <Col className="text-center">
+              <Col xs={12} sm={6} md className="text-center">
                 <a href="https://t.me/s/RappreDiscoBicocca">
                   <FontAwesomeIcon icon="newspaper" className="fai" />
                   <br />
                   <h5>Notizie</h5>
                 </a>
-                <p>Leggi le ultime notizie sul canale di rappresentanza di DISCO</p>
+                <p>
+                  Leggi le ultime notizie sul canale di rappresentanza di DISCO
+                </p>
               </Col>
-              <Col className="text-center">
+              <Col xs={12} sm={6} md className="text-center">
                 <a href="https://it.wikitolearn.org/Informatica">
                   <W2l className="fai" />
                   <br />
-                  <h5><WikiToLearn /></h5>
+                  <h5>
+                    <WikiToLearn />
+                  </h5>
                 </a>
                 <p>Accedi ai corsi di informatica su wikitolearn</p>
               </Col>
-              <Col className="text-center">
+              <Col xs={12} sm={6} md className="text-center">
                 <a href="/staff">
                   <FontAwesomeIcon icon="user-friends" className="fai" />
                   <br />
