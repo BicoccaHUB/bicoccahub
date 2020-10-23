@@ -127,6 +127,8 @@
       repositories:
         - owner: Ila
           url: https://github.com/ila/class-notes/tree/master/Trattamento%20e%20Codifica%20di%20Dati%20Multimediali
+        - owner: fdila
+          url: https://github.com/fdila/class_notes/tree/main/bachelor/tcdm
     - name: Busniess intelligence per i servizi finanziari
       repositories: []
     - name: Complementi di basi di dati
@@ -164,7 +166,9 @@
           url: https://github.com/dlcgold/Appunti/tree/master/Terzo%20Anno/Ricerca%20Operativa%20e%20Pianificazione%20delle%20Risorse
           wip: true
     - name: Robotica e automazione
-      repositories: []
+      repositories:
+        - owner: fdila
+          url: https://github.com/fdila/class_notes/tree/main/bachelor/robotica-automazione
     - name: Sistemi embedded
       repositories: []
 - year: Primo anno Magistrale
