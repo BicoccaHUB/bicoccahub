@@ -57,7 +57,7 @@ function Contribuisci({ data }) {
                 marginBottom: "1rem",
               }}
               alt="Clonazione dei sorgenti di una repository"
-              src="https://help.github.com/assets/images/help/repository/clone-repo-clone-url-button.png"
+              src="https://docs.github.com/assets/images/help/repository/https-url-clone.png"
             />
             <br />
             <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">
