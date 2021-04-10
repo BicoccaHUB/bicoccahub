@@ -129,6 +129,9 @@
           url: https://github.com/ila/class-notes/tree/master/Trattamento%20e%20Codifica%20di%20Dati%20Multimediali
         - owner: fdila
           url: https://github.com/fdila/class_notes/tree/main/bachelor/tcdm
+        - owner: Mooyeee
+          url: https://github.com/Mooyeee/ClassNotes/tree/main/Trattamento%20e%20Codifica%20dei%20Dati%20Multimediali
+          wip: true
     - name: Busniess intelligence per i servizi finanziari
       repositories: []
     - name: Complementi di basi di dati
