@@ -112,6 +112,8 @@
         - owner: Jacopo Maltagliati
           url: https://github.com/jack23247/ricettario
           wip: true
+        - owner: Mooyeee
+          url: https://github.com/Mooyeee/ClassNotes/tree/main/Analisi%20e%20Progetto%20di%20Algoritmi
     - name: Elementi di bioinformatica
       repositories:
         - owner: Ila
@@ -123,6 +125,9 @@
       repositories:
         - owner: Ila
           url: https://github.com/ila/class-notes/tree/master/Sicurezza%20e%20Affidabilit%C3%A0
+        - owner: Mooyeee
+          url: https://github.com/Mooyeee/ClassNotes/tree/main/Sicurezza%20E%20Affidabilit%C3%A0
+          wip: true
     - name: Trattamento e codifica di dati multimediali
       repositories:
         - owner: Ila
@@ -168,6 +173,8 @@
         - owner: dlcgold
           url: https://github.com/dlcgold/Appunti/tree/master/Terzo%20Anno/Ricerca%20Operativa%20e%20Pianificazione%20delle%20Risorse
           wip: true
+        - owner: Mooyeee
+          url: https://github.com/Mooyeee/ClassNotes/tree/main/Ricerca%20Operativa
     - name: Robotica e automazione
       repositories:
         - owner: fdila
